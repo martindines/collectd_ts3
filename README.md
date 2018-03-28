@@ -1,6 +1,8 @@
 # collectd_ts3
 Teamspeak 3 statistics collection for collectd
 
+Grafana Dashboard JSON to visualise statistics can be found in `dashboard.json`
+
 ## Dependencies
 
 [python-ts3 by Nikdoof](https://github.com/nikdoof/python-ts3)
@@ -29,14 +31,13 @@ LoadPlugin python
 </Plugin>
 ```
 
-|Placeholder|Value|
-|---|---|
-|SCRIPT_PATH|Path to collectd_ts3.py|
-|TEAMSPEAK3_SERVER_QUERY_HOST|Teamspeak 3 Server Query Host (default 127.0.0.1)|
-|TEAMSPEAK3_SERVER_QUERY_PORT|Teamspeak 3 Server Query Port (default 10011)|
-|TEAMSPEAK3_SERVER_QUERY_USERNAME|Teamspeak 3 Server Query Username (default serveradmin)|
-|TEAMSPEAK3_SERVER_QUERY_PASSWORD|Teamspeak 3 Server Query Password|
-
+|Placeholder|Value|Example|
+|---|---|---|
+|SCRIPT_PATH|Path to directory containing collectd_ts3.py|/opt/collectd/|
+|TEAMSPEAK3_SERVER_QUERY_HOST|Teamspeak 3 Server Query Host|127.0.0.1|
+|TEAMSPEAK3_SERVER_QUERY_PORT|Teamspeak 3 Server Query Port|10011|
+|TEAMSPEAK3_SERVER_QUERY_USERNAME|Teamspeak 3 Server Query Username|serveradmin|
+|TEAMSPEAK3_SERVER_QUERY_PASSWORD|Teamspeak 3 Server Query Password||
 
 ### without collectd service
 
