@@ -25,7 +25,7 @@ LoadPlugin python
   <Module collectd_ts3>
       Host "TEAMSPEAK3_SERVER_QUERY_HOST"
       Port "TEAMSPEAK3_SERVER_QUERY_PORT"
-      Username TEAMSPEAK3_SERVER_QUERY_USERNAME"
+      Username "TEAMSPEAK3_SERVER_QUERY_USERNAME"
       Password "TEAMSPEAK3_SERVER_QUERY_PASSWORD"
   </Module>
 </Plugin>
